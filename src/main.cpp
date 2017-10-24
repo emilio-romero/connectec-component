@@ -7,7 +7,7 @@ char archivo[30];
 int nr,nc, gs;
 int **imagen;
 imagen=readPgm(archivo,&nr,&nc,&gs);
-
+connectedComponent(imagen,nr,nc);
 
 freeMatrix(imagen,nr);
 cout<<"Su programa ha terminado\n";
